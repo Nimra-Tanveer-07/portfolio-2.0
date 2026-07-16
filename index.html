@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimra Tanveer | Quality Assurance & Creative Frontend Engineer</title>
+    <meta name="description"
+        content="Award-winning interactive portfolio of Nimra Tanveer. Discover a premium digital experience combining Software Quality Assurance, Frontend Architecture, and Scripted Automation.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nimra Tanveer | QA & Creative Frontend Engineer">
+    <meta property="og:description"
+        content="Immersive, highly polished portfolio showcasing software quality engineering, frontend systems, and custom dynamic animations.">
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Nimra Tanveer | QA & Creative Frontend Engineer">
+    <meta property="twitter:description"
+        content="Immersive, highly polished portfolio showcasing software quality engineering, frontend systems, and custom dynamic animations.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Smooth Page Loader & Logo Drawing -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader"></div>
+            <p class="loading-text">LOADING PORTFOLIO...</p>
+        </div>
+    </div>
+
+    <!-- Background Layering -->
+    <div class="aurora-bg"></div>
+    <div class="morph-gradient"></div>
+    <div class="noise-overlay"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Global Custom Cursor & Glow -->
+    <div class="custom-cursor-glow" id="cursor-glow"></div>
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="flashlight-overlay" id="flashlight"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Premium Header & Glass Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="nav-logo" aria-label="Home">
+                <span class="logo-text">&lt;NT /&gt;</span>
+            </a>
+            <nav class="nav-links" id="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Credentials</a>
+                <a href="#contact" class="nav-link highlight-btn magnetic">Let's Connect</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle menu" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Dynamic Content Wrapper -->
+    <main id="smooth-content">
+
+        <!-- PRESTIGE HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-wrapper">
+                <!-- Cosmic/Futuristic Geometry Layers (Mouse Interactive Parallax) -->
+                <div class="parallax-layer core-portal" data-speed="0.2"></div>
+                <div class="parallax-layer ambient-grid" data-speed="0.4"></div>
+                <div class="parallax-layer abstract-vectors" data-speed="0.6"></div>
+            </div>
+
+            <!-- Foreground Hero Content -->
+            <div class="hero-overlay-content scroll-reveal">
+                <div class="badge magnetic">⚡ SOFTWARE QUALITY ASSURANCE &amp; AUTOMATION</div>
+                <h1 class="gradient-text hero-title">
+                    Perfecting Software.<br>Designing Experiences.
+                </h1>
+                <p class="hero-subtitle typing-text">
+                    I engineering robust quality pipelines and build high-fidelity interactive interfaces.
+                </p>
+                <div class="hero-controls">
+                    <button class="control-btn primary-btn magnetic ripple-trigger" onclick="scrollToSection('about')">
+                        Begin Exploration
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO ABOUT SECTION -->
+        <section id="about" class="about-section container scroll-reveal">
+            <h2 class="section-title gradient-text">About My Craft</h2>
+            <div class="about-grid">
+                <div class="about-visual-card glass-card tilt-card" data-tilt>
+                    <div class="avatar-glow-wrapper">
+                        <div class="abstract-avatar">
+                            <div class="orbiting-ring ring-1"></div>
+                            <div class="orbiting-ring ring-2"></div>
+                            <div class="core-globe"></div>
+                        </div>
+                    </div>
+                    <div class="visual-card-stats">
+                        <div class="stat-box">
+                            <h3 class="stat-num" data-target="4">0</h3>
+                            <p>Semesters CS</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 class="stat-num" data-target="15">0</h3>
+                            <p>Frameworks Mastered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-card glass-card">
+                    <span class="card-subtitle">THE MINDSET</span>
+                    <h3 class="card-title">Securing integrity, crafting aesthetics.</h3>
+                    <p class="card-paragraph">
+                        Currently in my fourth semester of Computer Science, I bridge the gap between creative visual
+                        frontends and ironclad Software Quality Assurance. I specialize in designing test layouts,
+                        automation testing scripts, and intuitive UX/UI designs.
+                    </p>
+                    <blockquote class="about-quote">
+                        "Great software isn't just beautifully coded—it's rigorously verified down to the last pixel and
+                        runtime process."
+                    </blockquote>
+                    <div class="about-meta-list">
+                        <div class="meta-item"><strong>Location:</strong> Lahore, Pakistan</div>
+                        <div class="meta-item"><strong>Focus:</strong> Manual &amp; Automated QA, Web Architectures,
+                            Python Automation</div>
+                    </div>
+                    <a href="#contact" class="btn secondary-btn magnetic ripple-trigger">Get in touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE TIMELINE SECTION -->
+        <section id="experience" class="experience-section container scroll-reveal">
+            <h2 class="section-title gradient-text">Professional &amp; Academic Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Timeline Block 1 -->
+                <div class="timeline-item left-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card tilt-card" data-tilt>
+                        <span class="timeline-date">2026 - PRESENT</span>
+                        <h3 class="timeline-role">Computer Science Scholar</h3>
+                        <h4 class="timeline-org text-gradient">Government Graduate College of Science</h4>
+                        <p class="timeline-desc">
+                            Deepening core software engineering fundamentals, networking architecture, database
+                            normalization, and automated algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Block 2 -->
+                <div class="timeline-item right-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card tilt-card" data-tilt>
+                        <span class="timeline-date">2026</span>
+                        <h3 class="timeline-role">UI/UX &amp; QA Designer</h3>
+                        <h4 class="timeline-org text-gradient">Skillcy App</h4>
+                        <p class="timeline-desc">
+                            Designed the comprehensive interactive user interface, structural design layouts, and mobile
+                            mockups for a dedicated student skill advancement platform.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Block 3 -->
+                <div class="timeline-item left-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card tilt-card" data-tilt>
+                        <span class="timeline-date">2026</span>
+                        <h3 class="timeline-role">Product Specialist &amp; QA Architect</h3>
+                        <h4 class="timeline-org text-gradient">CaseFlow SaaS</h4>
+                        <p class="timeline-desc">
+                            Engineered complete visual identity layouts, test case matrices, dashboard designs, and
+                            functional marketing models for a dedicated QA SaaS framework.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section container scroll-reveal">
+            <h2 class="section-title gradient-text">Sustained Skills</h2>
+            <p class="section-subtitle">A map of specialized operational domains and engineering strategies.</p>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skills-column glass-card scroll-reveal">
+                    <div class="skills-header">
+                        <span class="skills-icon">✦</span>
+                        <h3>Quality Assurance</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag-card magnetic" data-level="95">
+                            <span>Manual Testing &amp; Bug Tracking</span>
+                            <div class="skill-gauge"><span style="width: 95%;"></span></div>
+                        </div>
+                        <div class="skill-tag-card magnetic" data-level="90">
+                            <span>Test Case Management &amp; Design</span>
+                            <div class="skill-gauge"><span style="width: 90%;"></span></div>
+                        </div>
+                        <div class="skill-tag-card magnetic" data-level="85">
+                            <span>Python Automation Scripting</span>
+                            <div class="skill-gauge"><span style="width: 85%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skills-column glass-card scroll-reveal">
+                    <div class="skills-header">
+                        <span class="skills-icon">▲</span>
+                        <h3>Frontend Engineering</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag-card magnetic" data-level="92">
+                            <span>HTML5, CSS3, &amp; Tailwind</span>
+                            <div class="skill-gauge"><span style="width: 92%;"></span></div>
+                        </div>
+                        <div class="skill-tag-card magnetic" data-level="88">
+                            <span>Vanilla JavaScript UI Systems</span>
+                            <div class="skill-gauge"><span style="width: 88%;"></span></div>
+                        </div>
+                        <div class="skill-tag-card magnetic" data-level="80">
+                            <span>Fluid Micro-Interactions</span>
+                            <div class="skill-gauge"><span style="width: 80%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skills-column glass-card scroll-reveal">
+                    <div class="skills-header">
+                        <span class="skills-icon">❖</span>
+                        <h3>Creative Branding</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag-card magnetic" data-level="90">
+                            <span>Graphic &amp; Identity Design</span>
+                            <div class="skill-gauge"><span style="width: 90%;"></span></div>
+                        </div>
+                        <div class="skill-tag-card magnetic" data-level="95">
+                            <span>SaaS UI Prototyping</span>
+                            <div class="skill-gauge"><span style="width: 95%;"></span></div>
+                        </div>
+                        <div class="skill-tag-card magnetic" data-level="85">
+                            <span>Creative Script Writing</span>
+                            <div class="skill-gauge"><span style="width: 85%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS GALLERY SECTION WITH DETAILED MODALS -->
+        <section id="projects" class="projects-section container scroll-reveal">
+            <h2 class="section-title gradient-text">Selected Systems</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="project-card glass-card tilt-card" data-tilt data-project-id="proj-1">
+                    <div class="card-img-wrapper">
+                        <div class="project-shimmer"></div>
+                        <div class="dummy-card-artwork dark-mesh-1"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="badge">SaaS Design</span>
+                            <span class="badge">Test Systems</span>
+                        </div>
+                        <h3 class="project-title">CaseFlow Management</h3>
+                        <p class="project-excerpt">A seamless web layout and logical test management architecture
+                            crafted specifically for dedicated QA teams.</p>
+                        <button class="project-action-btn magnetic ripple-trigger">Deep Dive</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card glass-card tilt-card" data-tilt data-project-id="proj-2">
+                    <div class="card-img-wrapper">
+                        <div class="project-shimmer"></div>
+                        <div class="dummy-card-artwork dark-mesh-2"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="badge">Education Tech</span>
+                            <span class="badge">Mobile UI</span>
+                        </div>
+                        <h3 class="project-title">Skillcy UI Ecosystem</h3>
+                        <p class="project-excerpt">Complete dynamic interface system encompassing 14 distinct layout
+                            modules tracking student skill progress.</p>
+                        <button class="project-action-btn magnetic ripple-trigger">Deep Dive</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card glass-card tilt-card" data-tilt data-project-id="proj-3">
+                    <div class="card-img-wrapper">
+                        <div class="project-shimmer"></div>
+                        <div class="dummy-card-artwork dark-mesh-3"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="badge">Suspense Fiction</span>
+                            <span class="badge">Web Design</span>
+                        </div>
+                        <h3 class="project-title">'Dreadful Her' Portal</h3>
+                        <p class="project-excerpt">An elegant twin-column visual design and layout custom-engineered to
+                            showcase serialized mystery literature.</p>
+                        <button class="project-action-btn magnetic ripple-trigger">Deep Dive</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & CREDENTIALS WALL -->
+        <section id="certifications" class="certifications-section container scroll-reveal">
+            <h2 class="section-title gradient-text">Credentials &amp; Milestones</h2>
+            <div class="cert-grid">
+                <div class="cert-card glass-card tilt-card" data-tilt>
+                    <div class="cert-header">
+                        <div class="cert-badge">★</div>
+                        <span class="cert-id">GGCS BSCS</span>
+                    </div>
+                    <h3 class="cert-title">Computer Science Academic Degree</h3>
+                    <p class="cert-issuer">Government Graduate College of Science</p>
+                    <button class="cert-download-btn magnetic">Academic Track Active</button>
+                </div>
+
+                <div class="cert-card glass-card tilt-card" data-tilt>
+                    <div class="cert-header">
+                        <div class="cert-badge">✦</div>
+                        <span class="cert-id">QA / Dev Core</span>
+                    </div>
+                    <h3 class="cert-title">Manual Quality Assurance Specialist</h3>
+                    <p class="cert-issuer">SaaS Test Case Management Core</p>
+                    <button class="cert-download-btn magnetic">Verified Project Architecture</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION WITH GLASSMORPHIC FORM -->
+        <section id="contact" class="contact-section container scroll-reveal">
+            <div class="contact-card-wrapper glass-card">
+                <div class="contact-header">
+                    <h2 class="gradient-text">Initialize Contact</h2>
+                    <p>Interested in collaborating on a QA pipeline or a premium interactive front-end application?
+                        Let's connect.</p>
+                </div>
+
+                <form class="contact-form" id="portfolio-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="user-name" required placeholder=" " />
+                            <label for="user-name">Your Name</label>
+                            <span class="input-glow-line"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="user-email" required placeholder=" " />
+                            <label for="user-email">Email Address</label>
+                            <span class="input-glow-line"></span>
+                        </div>
+                    </div>
+                    <div class="input-group full-width">
+                        <textarea id="user-msg" rows="5" required placeholder=" "></textarea>
+                        <label for="user-msg">Message Specifications</label>
+                        <span class="input-glow-line"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn magnetic ripple-trigger" id="send-form-btn">
+                        <span class="btn-text">Transmit Signal</span>
+                        <div class="btn-icon-wrapper">
+                            <svg class="airplane-svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor" d="M2 21l21-9L2 3v7l15 2-15 2z" />
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+
+                <div class="terminal-response-box hidden" id="terminal-log">
+                    <p class="terminal-line"><span class="terminal-prefix">[SYSTEM]:</span> Routing transmission data...
+                    </p>
+                    <p class="terminal-line"><span class="terminal-prefix">[SYSTEM]:</span> Connection Secure. Message
+                        dispatched to Nimra Tanveer.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DETAIL modal for classic web projects -->
+    <div class="project-detail-modal" id="project-modal">
+        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+        <div class="project-modal-content glass-card">
+            <button class="close-project-btn magnetic" onclick="closeProjectModal()">✕</button>
+            <div class="modal-hero-banner" id="modal-banner"></div>
+            <div class="modal-body">
+                <h3 id="modal-project-title">Project Title</h3>
+                <p id="modal-project-desc">Detailed presentation description...</p>
+                <div class="modal-meta-grid">
+                    <div>
+                        <strong>Implementation Parameters:</strong>
+                        <p id="modal-tech-stack">Vanilla JS, CSS Variables, SVG</p>
+                    </div>
+                    <div>
+                        <strong>Focus Metric:</strong>
+                        <p id="modal-perf-metric">60 FPS Render Cycle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minimal Premium Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <p>&copy; 2026 Nimra Tanveer. All Rights Reserved.</p>
+            <button class="back-to-top-btn magnetic" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                ↑ Back to Top
+            </button>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
