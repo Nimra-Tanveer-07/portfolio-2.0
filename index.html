@@ -78,42 +78,51 @@
     <main id="smooth-content">
 
         <!-- PRESTIGE HERO SECTION -->
-        <section id="hero" class="hero-section">
-            <div class="hero-bg-wrapper">
+        <section id="hero" class="hero-section mt-8">
 
-                <img src="assets/hero-section-bg.png" alt="" class="hero-bg-image">
-
-                <!-- Cosmic/Futuristic Geometry Layers (Mouse Interactive Parallax) -->
-                <!-- <div class="parallax-layer core-portal" data-speed="0.2"></div>
-                <div class="parallax-layer ambient-grid" data-speed="0.4"></div>
-                <div class="parallax-layer abstract-vectors" data-speed="0.6"></div> -->
-            </div>
-
-            <!-- Foreground Hero Content -->
             <div class="hero-overlay-content scroll-reveal max-w-7xl mx-auto px-8">
-                <div class="badge magnetic">DOMAIN - Project Management and Quality Associate</div>
 
-                <div class="grid grid-cols-2 w-full">
-                    <div class="text-left">
+                <div class="badge magnetic mb-8">
+                    DOMAIN - Project Management and Quality Associate
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+
+                    <!-- Left Side -->
+                    <div class="text-left ml-8">
                         <h1 class="gradient-text hero-title italic">
-                            Perfecting Projects,<br>Elevating Experiences.
+                            Elevating
+                            <span class="font-['Playfair_Display']">Projects</span>,
+                            <br>
+                            <span class="font-['Playfair_Display']">Innovating</span>
+                            Experiences.
+                            
                         </h1>
-                        <p class="hero-subtitle italic typing-text">
-                            Specialised in Bringing Notch-top Quality to Softwares, <br>
+
+                        <p class="hero-subtitle italic typing-text mt-6">
+                            Specialised in Bringing Notch-top Quality to Softwares,
+                            <br>
                             Reporting Bugs Early Hand and
                             Elevating User Experiences.
                         </p>
 
+                        <div class="hero-controls mt-8">
+                            <button class="control-btn primary-btn magnetic ripple-trigger highlight-btn"
+                                onclick="scrollToSection('about')">
+                                Begin Exploration
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="flex justify-center lg:justify-end">
+                        <img src="assets/hero-section-bg.png" alt="" class="w-full max-w-[700px] h-auto object-contain">
                     </div>
 
                 </div>
-                <div class="hero-controls mt-8">
-                    <button class="control-btn primary-btn magnetic ripple-trigger highlight-btn magnetic"
-                        onclick="scrollToSection('about')">
-                        Begin Exploration
-                    </button>
-                </div>
+
             </div>
+
         </section>
 
         <!-- PORTFOLIO ABOUT SECTION -->
@@ -123,16 +132,18 @@
             <h2 class=" text-right section-title mr-24 italic">About My <span
                     class="section-title gradient-text italic nav-link active text-bold">Craft</span>
             </h2>
-            <div class="relative items-center justify-center mt-20">
+            <div class="relative w-fit mx-auto mt-20">
 
                 <!-- Character -->
-                <div class="absolute -left-16 bottom-0 z-30 animate-float pointer-events-none">
-                    <img src="assets/my-bot.png" alt="" class="h-[600px] w-auto max-w-none">
+                <div class="absolute left-[-70px] bottom-0 z-30 animate-float pointer-events-none">
+                    <img src="assets/my-bot.png" alt="" class="h-[620px] w-auto max-w-none">
                 </div>
 
-                <div class="about-content-card glass-card ml-24 pl-44 -translate-y-4">
+                <div
+                    class="about-content-card glass-card ml-[180px] pl-24 pt-8 pb-4 pr-4 mr-8 rounded-lg -translate-y-8">
                     <span class="card-subtitle">THE MINDSET</span>
-                    <h3 class="card-title italic gradient-text font-bold">Securing Integrity, Automating Excellence</h3>
+                    <h3 class="card-title italic gradient-text font-bold">Meet the <span
+                            class="font-['Playfair_Display']">MIND</span> Behind the Work!!</h3>
                     <p class="card-paragraph">
                         I bridge the gap between creative visual
                         frontends and ironclad Software Quality Assurance. I specialize in designing test layouts, Great
@@ -143,11 +154,23 @@
                         "Great software isn't just beautifully coded—it's rigorously verified down to the last pixel and
                         runtime process."
                     </blockquote>
-                    <div class="about-meta-list">
-                        <div class="meta-item"><strong>Location:</strong> Lahore, Pakistan</div>
-                        <div class="meta-item"><strong>Education:</strong> Bachelors in Computer Science</div>
+                    <div class="flex gap-4">
+                        <div class="about-meta-list">
+                            <div class="meta-item italic"><strong>Location:</strong> Lahore, Pakistan</div>
+                            <div class="meta-item italic"><strong>Education:</strong> Bachelors in Computer Science
+                            </div>
+                        </div>
+                        <div class="about-meta-list">
+                            <div class="meta-item italic"><strong>CGPA:</strong> 3.61</div>
+                            <div class="meta-item italic"><strong>Total Experience:</strong> 3+ Years
+                            </div>
+                        </div>
                     </div>
-                    <a href="#contact" class="z-90 nav-link highlight-btn magnetic">Get in touch</a>
+                    <div class="flex justify-center">
+                        <a href="#contact" class="nav-link highlight-btn magnetic">
+                            Get in touch
+                        </a>
+                    </div>
                 </div>
             </div>
 

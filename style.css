@@ -565,6 +565,43 @@ body {
 .about-meta-list {
     margin-bottom: 24px;
 }
+.glass-panel {
+     background: rgba(255, 255, 255, 0.03);
+     backdrop-filter: blur(10px);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+.premium-btn {
+     
+     border: 1px solid rgba(101, 195, 243, 0.15);
+     color: #aaa;
+     background: rgba(255, 255, 255, 0.03);
+     backdrop-filter: blur(10px);
+     transition: all 0.35s ease;
+  
+ }
+
+ /* hover glow effect */
+ .premium-btn:hover {
+     color: #fff;
+     
+     border-color: rgba(78, 201, 241, 0.4);
+     box-shadow: 0 0 20px rgba(78, 201, 241, 0.15);
+ }
+
+ /* subtle animated shine */
+ .premium-btn::before {
+     
+     
+     background: linear-gradient(120deg,
+             transparent,
+             rgba(0, 255, 156, 0.15),
+             transparent);
+     transition: 0.5s;
+ }
+
+ .premium-btn:hover::before {
+     left: 100%;
+ }
 
 .meta-item {
     font-size: 0.9rem;
